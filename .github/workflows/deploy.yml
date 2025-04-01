@@ -66,6 +66,7 @@ jobs:
 
       - name: Install packages
         run: |
+          npm config set registry https://registry.npmjs.org/
           npm install
           cd worker
           npm install
